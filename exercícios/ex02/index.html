@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>Window Prompt - String</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <style>
         body {
@@ -19,10 +19,8 @@
     <p>Ufa! Me livrei da maldição</p>
     <!--comentario em html-->
     <script>
-        window.alert('Meu primeiro site usando JavaScript')
-        window.confirm('Está gostando do curso?') /*comentario 
-        usando mais de uma linha em js*/
-        window.prompt('Qual é o seu nome?') // comentario em linha de js
+        var nome = window.prompt('Qual é o seu nome?') // comentario em linha de js
+        window.alert('Prazer em te conhecer, ' + nome + '!')
     </script>
 </body>
 </html>
