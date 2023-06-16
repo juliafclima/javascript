@@ -15,9 +15,11 @@
     <script>
         // .toUpperCase = MAIUSCULO
         // .toLowerCase = minusculo
-        // .length = conta os caracteres
+        
         nome = window.prompt('Qual é o seu nome?')
-        document.write(`Olá, ${nome.toUpperCase()}! Seu nome tem ${nome.length} letras.`)
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.` )// .length = conta os caracteres
+        document.write(`<br>Seu nome em MAIUSCULAS fica assim: ${nome.toUpperCase()}`)
+        document.write(`<br>E em minusculas: ${nome.toLowerCase()}`)
     </script>
 </body>
 </html>
