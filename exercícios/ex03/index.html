@@ -19,10 +19,18 @@
     <p>Ufa! Me livrei da maldição</p>
     <!--comentario em html-->
     <script>
-        var n1 = Number.parseInt(window.prompt('Digite um número')) //força a converção do dado para number int
-        var n2 = Number.parseInt(window.prompt('Digite outro número'))
+        //Window.prompt sempre retorna o valor para string
+        //para converter 
+        //Number.parseInt
+        //Number.parseFloat
+
+        var n1 = Number(window.prompt('Digite um número: '))
+
+        var n2 = Number(window.prompt('Digite outro número: '))
+
         s = n1 + n2
-        window.alert(n1 + '+' + n2 + ' é igual a ' + s)
+
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`) // ${} template string
     </script>
 </body>
 </html>
